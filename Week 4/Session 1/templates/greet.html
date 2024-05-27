@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greetings</title>
+</head>
+<body>
+    <h1>Welcome <i>{{var1}}</i> </h1>
+
+    {% if color == "red" %}
+        <span style="color: red;">This color is red</span>
+    {% elif color == "blue" %}
+        <span style="color: blue;">This color is blue</span>
+    {% endif %}
+
+    <ul>
+        {% for animal in animals%}
+            <li>{{animal}}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
